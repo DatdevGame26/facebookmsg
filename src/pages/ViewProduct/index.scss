@@ -1,0 +1,103 @@
+.ViewProduct {
+    margin: 30px 360px 50px 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    .view_product_container {
+        display: flex;
+        gap: 40px;
+        padding: 0px 100px 0px 150px;
+        .view_product_left {
+            height: 300px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+
+            .product_image_container {
+                .product_image {
+                    width: 300px;
+                    object-fit: contain;
+                }
+            }
+        }
+
+        .view_product_right {
+            font-size: 20px;
+
+            .product_name {
+                font-size: 30px;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+
+            .product_price {
+                font-size: 25px;
+                font-weight: 500;
+                color: rgb(197, 28, 28);
+                margin-bottom: 40px;
+
+            }
+
+            .product_origin {
+                margin-bottom: 10px;
+            }
+
+            .product_description {
+                margin-bottom: 30px;
+            }
+
+            .quantity_control {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                .quantity_display {
+                    width: 40px;
+                    text-align: center;
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 32px;
+                    border: 1px solid #d9d9d9;
+                    border-radius: 5px;
+                }
+
+                .quantity_control_button {
+                    transition: 0s;
+                }
+
+                margin-bottom: 15px;
+            }
+
+            .add_to_cart_button {
+                padding: 20px 10px;
+                background-color: rgb(195, 117, 21);
+                border: 3px solid rgb(195, 117, 21);
+                font-size: 18px;
+                transition: 0s;
+                font-weight: 600;
+
+                &:hover {
+                    background-color: rgb(255, 249, 228);
+                    color: rgb(46, 22, 13);
+                }
+            }
+        }
+    }
+
+    .suggested_products {
+        margin-top: 10px;
+    
+        h3 {
+          font-size: 24px;
+          margin-bottom: 20px;
+        }
+    
+        .suggested_products_list {
+          display: flex;
+          gap: 20px;
+          justify-content: space-between;
+        }
+      }
+}

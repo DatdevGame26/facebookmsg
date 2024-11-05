@@ -1,0 +1,79 @@
+.CartItem {
+    height: 150px;
+    box-shadow: 0px 0px 4px black;
+    display: flex;
+    align-items: center;
+
+    .cart_item_container {
+        display: flex;
+        width: 800px;
+        justify-content: space-between;
+        padding: 10px;
+        .part_product {
+            display: flex;
+            align-items: center;
+        }
+        .right_product {
+            .product_image {
+                height: 130px;
+                width: 130px;
+                object-fit: contain;
+                margin-right: 30px;
+            }
+
+            .product_name {
+                font-size: 20px;
+                font-weight: 600;
+            }
+        }
+
+        .left_product {
+            .product_price {
+                font-size: 25px;
+                font-weight: 600;
+                color: rgb(178, 0, 0);
+                margin-right: 50px;
+            }
+
+            .two_button {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: end;
+                height: 130px;
+
+                .quantity_control {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    .quantity_display {
+                        padding: 5px 10px;
+                        text-align: center;
+                        font-size: 18px;
+                        font-weight: 700;
+                        border: 1px solid #d9d9d9;
+                        border-radius: 5px;
+                    }
+
+                    .quantity_control_button {
+                        transition: 0s;
+                    }
+
+                    }
+
+                .delete_button {
+                    transition: 0s;
+                    background-color: #e7ffea;
+                    color: black;
+                    border: 1px solid rgba(8, 54, 17, 0.591);
+                    &:hover{
+                        color: rgb(255, 255, 255);
+                        background-color: rgb(229, 13, 13);
+                    }
+                }
+            }
+        }
+
+    }
+}

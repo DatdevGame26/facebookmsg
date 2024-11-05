@@ -1,0 +1,193 @@
+.Personal {
+    padding: 20px 450px;
+    min-height: 500px;
+    background-color: rgb(215, 231, 215);
+
+    .personal_container {
+        display: flex;
+        background-color: white;
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.567);
+        min-height: 400px;
+
+        .personal_left {
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(46, 104, 53);
+            width: 300px;
+
+            .personal_left_button {
+                display: flex;
+                gap: 10px;
+                font-size: 25px;
+                padding: 20px;
+                background-color: rgb(225, 255, 226);
+                position: relative;
+
+                &.info_button {
+                    z-index: 1;
+                }
+
+                &.history_button {
+                    z-index: 0;
+                }
+
+                .button_text {
+                    font-size: 22px;
+                    font-weight: 600;
+                }
+
+                &.active {
+                    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.525);
+                    color: white;
+                    background-color: rgb(76, 153, 74);
+                }
+
+                &:hover {
+                    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.644);
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .personal_right {
+            margin-left: 20px;
+            padding: 20px;
+
+            .personal_info {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .name_email {
+                    display: flex;
+                    gap: 80px;
+                }
+
+                .personal_info_component {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    font-size: 20px;
+
+                    input {
+                        font-size: 17px;
+                        padding: 10px;
+                    }
+
+                    .input_name {
+                        width: 170px;
+                    }
+
+                    .input_tel {
+                        width: 200px;
+                    }
+
+                    .input_adr {
+                        width: 490px;
+                    }
+                }
+
+                .change_container {
+                    margin: 10px 0px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: end;
+                    gap: 20px;
+
+
+                    .cancel_button,
+                    .change_button,
+                    .logout_button {
+                        width: 100px;
+                        border-radius: 30px;
+                        padding: 10px;
+                        font-size: 13px;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+
+                    .cancel_button {
+                        &:hover {
+                            background-color: rgb(212, 212, 212);
+                        }
+                    }
+
+                    .change_button {
+                        font-weight: 600;
+                        background-color: rgb(74, 96, 154);
+                        color: white;
+                        border: 3px solid rgb(74, 96, 154);
+
+                        &:hover {
+                            background-color: rgb(191, 204, 240);
+                            color: black;
+                        }
+                    }
+
+                    .logout_button {
+                        color: white;
+                        background-color: rgb(246, 74, 74);
+                        border: 3px solid rgb(246, 74, 74);
+
+                        font-weight: 600;
+                        &:hover {
+                            background-color: rgb(255, 187, 187);
+                            color: black;
+                        }
+                    }
+                }
+            }
+            .order_history {
+                margin-top: 20px;
+              
+                h3 {
+                  font-size: 24px;
+                  font-weight: 600;
+                  margin-bottom: 15px;
+                  color: rgb(39, 107, 51);
+                }
+              
+                .order_item {
+                  background-color: #f9f9f9;
+                  border-radius: 8px;
+                  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.457);
+                  margin-bottom: 20px;
+                  padding: 15px;
+              
+                  .order_summary {
+                    border-bottom: 1px solid #ccc;
+                    padding-bottom: 10px;
+                    margin-bottom: 10px;
+              
+                    p {
+                      margin: 5px 0;
+                    }
+                  }
+              
+                  .order_items {
+                    h4 {
+                      font-size: 20px;
+                      font-weight: 500;
+                      margin-bottom: 10px;
+                    }
+              
+                    .order_product {
+                      background-color: #eef;
+                      border-radius: 5px;
+                      padding: 10px;
+                      margin-bottom: 5px;
+              
+                      p {
+                        margin: 0;
+                      }
+                    }
+                  }
+                }
+              }
+              
+        }
+
+    }
+}

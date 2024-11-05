@@ -1,0 +1,93 @@
+.Header{
+  .upper-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #eaf3ea;
+    height: 70px;
+    $button-color: rgb(74, 161, 56);
+    z-index: 10;
+
+    .logo {
+      height: 60px;
+      width: auto;
+      margin-left: 200px;
+    }
+    .logo:hover{
+      cursor: pointer;
+    }
+    .search-bar {
+      width: 550px;
+      height: 50px;
+      margin-left: 210px;
+      padding-left: 20px;
+      border-radius: 20px 0px 0px 20px;
+      border-color: $button-color;
+    }
+  
+    .search-button, .cart-button, .account-button{
+      width: 50px;
+      height: 50px;
+      transition: 0s;
+      .icon {
+        font-size: 24px;
+      }
+    }
+    .search-button{
+      background-color: $button-color;
+      margin-right: 250px;
+      border-width: 2px;
+      border-radius: 0px 20px 20px 0px;
+      &:hover{
+        background-color: white !important;
+        color: $button-color !important;
+        border-color: $button-color;
+        cursor: pointer;
+      }
+    }
+    .cart-button, .account-button{
+      color: $button-color;
+      margin: 0px 5px;
+      border-color: $button-color;
+      border-width: 2px;
+      border-radius: 20px;
+      &:hover{
+        background-color: $button-color !important; 
+        color: white !important;
+        cursor: pointer;
+      }
+    }
+    .login_title, .signup_title{
+      font-size: 20px;
+      margin-left: 10px;
+      color: #277020;
+      font-weight: 600;
+      &:hover{
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+  }
+  .lower-header {
+    background-color: #498a43;
+    box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.202);
+    z-index: 8;
+      display: flex;
+      justify-content: center;
+      gap: 70px;
+      .nav-item {
+        font-size: 18px;
+        font-weight: bold;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 15px 20px 16px 20px;
+
+        &:hover {
+          color: rgb(20, 99, 46);
+          background-color: rgb(219, 255, 209);
+          cursor: pointer;
+        }
+      }
+  }
+  
+}

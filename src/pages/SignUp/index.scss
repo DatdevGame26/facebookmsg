@@ -1,0 +1,71 @@
+.SignUp {
+    padding: 100px 700px;
+    background-color: #ddebdc;
+
+    .signup_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.461);
+        background-color: white;
+        border-radius: 20px;
+        padding: 30px 0px 50px 0px;
+
+        .title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #9a5e1a;
+            font-weight: 600;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px 100px;
+            gap: 20px;
+            $width_all: 300px;
+
+            .inputContainer {
+                display: flex;
+                flex-direction: column;
+
+                label {
+                    margin-bottom: 5px;
+                }
+
+                .input {
+                    width: $width_all;
+                    padding: 10px;
+                    font-size: 16px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                }
+            }
+
+
+            .submit_button {
+                width: $width_all + 20px;
+                margin-top: 10px;
+                padding: 15px 40px;
+                font-size: 16px;
+                background-color: #c27320;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            .error_message{
+                color: red;
+            }
+            .login_link{
+                color: rgb(35, 35, 175);
+                text-decoration: underline;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

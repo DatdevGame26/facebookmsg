@@ -1,0 +1,46 @@
+.Policy {
+    padding: 40px 400px 50px 440px;
+    background-color: #f9f9f9;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+  
+    h1 {
+      text-align: center;
+      color: #4CAF50;
+      margin-bottom: 20px;
+    }
+  
+    .intro, .closing {
+      text-align: justify;
+      margin: 20px 0;
+      font-size: 1.1em;
+    }
+  
+    .policy-section {
+      margin: 30px 0;
+  
+      h2 {
+        color: #388E3C;
+        border-bottom: 2px solid #4CAF50;
+        padding-bottom: 10px;
+      }
+  
+      p {
+        text-align: justify;
+        line-height: 1.6;
+      }
+      .policy_image_container{
+        display: flex;
+        justify-content: center;
+      }
+      .policy-image {
+        height: 200px; /* Giữ tỉ lệ ảnh */
+        margin: 20px 0; /* Khoảng cách với nội dung */
+        display: block; /* Đảm bảo ảnh là khối */
+        border-radius: 8px; /* Bo góc ảnh */
+        object-fit: cover;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Tạo bóng cho ảnh */
+      }
+    }
+  }
+  

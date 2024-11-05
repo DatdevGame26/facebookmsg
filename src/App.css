@@ -3,7 +3,6 @@
 }
 
 .App-logo {
-  height: 40vmin;
   pointer-events: none;
 }
 
@@ -12,7 +11,10 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+main{
+  flex: 1;
+  min-height: calc(100vh - 413px);
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

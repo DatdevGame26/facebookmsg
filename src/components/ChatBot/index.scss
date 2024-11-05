@@ -1,0 +1,42 @@
+/* CSS cho icon chatbot */
+.chatbot-icon {
+  position: fixed;
+  bottom: 60px;
+  right: 40px;
+  width: 60px;
+  height: 60px;
+  background-color: #4CAF50; /* màu sắc của biểu tượng */
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+
+  .chat-bot-image {
+    width: 30px;
+    height: 30px;
+    transition: 0.2s;
+  }
+  &:hover {
+      .chat-bot-image {
+          transform: scale(1.2);
+      }
+  }
+}
+
+/* CSS cho cửa sổ chat */
+.chat-window {
+  position: fixed;
+  bottom: 130px; 
+  right: 40px; 
+  width: 300px;
+  height: 470px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  z-index: 999; 
+  overflow: hidden;
+}

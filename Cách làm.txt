@@ -1,0 +1,35 @@
+1. Tạo thư mục BT1
+2. Vào Terminal gõ các lệnh sau
+	npx create-react-app [tên website]
+	npm install sass
+	npm install antd
+	npm install @ant-design/icons
+	npm install react-router-dom
+	npm install axios
+	npm install express mssql
+	npm install mongoose
+	npm install cors
+	npm install -g nodemon
+	npm install concurrently --save (chỉnh lại package.json)
+	npm install lsof
+	npm i font-awesome
+	npm install dotenv
+	npm install jwt-decode
+	npm install react-chatbot-kit
+
+
+
+3. Tạo thư mục pages trong src và tạo các folder trang của cho website
+Mỗi thư mục trang sẽ có index.jsx và index.scss, gồm các trang sau:
+	HomePage
+	Product
+	PreviewProduct
+	Payment
+4. Chỉnh sửa trong App.js để hiện các trang của website
+5. Code Front-end
+	Sử dụng react-router-dom để giữ nguyên Header và Footer trong App.js
+	Tạo folder Fonts trong asset để đựng font cần dùng, chỉnh sửa App.css để import font
+6. Back end làm CSDL với MongoDB
+localStorage.removeItem('token'); (tại file index.js)
+Đồng bộ hoá setIsSignIn tại AuthContext (src) tại các component:
+	Header, Login, Personal
